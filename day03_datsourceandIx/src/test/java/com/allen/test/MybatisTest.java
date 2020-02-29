@@ -48,36 +48,7 @@ private IUserDao userDao;
         }
 
     }
-@Test
-    public void testSave()  {
-        User user = new User();
-        user.setUsername("周杰困");
-        user.setSex("男");
-        user.setAddress("北京");
-        user.setBrithday(new Date());
-        userDao.saveUser(user);
-        sqlSession.commit();
-        System.out.println(user.toString());
-    }
-//    测试更新操作
-    @Test
-    public void testUpdate()  {
-        User user = new User();
-        user.setId(1);
-        user.setUsername("李俊杰");
-        user.setSex("男");
-        user.setAddress("南京");
-        user.setBrithday(new Date());
-        System.out.println(user.toString());
-        userDao.updateUser(user);
-    }
-    //    测试删除操作
-    @Test
-    public void testDelete()  {
-        //执行删除方法
-        userDao.deleteUser(3);
-        sqlSession.commit();
-    }
+
     @Test
     public void testFindOne()  {
         //执行查找方法
@@ -92,31 +63,19 @@ private IUserDao userDao;
             System.out.println(users);
         }
     }
-
-    /**
-     * 查询总记录条数
-     */
     @Test
-    public void testTotal()  {
+    public void testFindCondition()  {
         //执行查找方法
-        int total = userDao.total();
-        System.out.println(total);
-    }
-
-    /**
-     * 测试使用queryVO作为查询条件
-     */
-    @Test
-    public void testFindVo()  {
-        QueryVo vo = new QueryVo();
         User user = new User();
-        user.setUsername("%李%");
-        vo.setUser(user);
-        //执行查找方法
-        List<User> users = userDao.findUserByVo(vo); 
+        user.setUsername("ll");
+        user.setSex("男");
+        List<User> users = userDao.findUserByCondition(user);
         for (User u : users){
             System.out.println(u);
         }
     }
+
+
+
 }
 

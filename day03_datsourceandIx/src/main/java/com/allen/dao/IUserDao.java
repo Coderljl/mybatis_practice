@@ -12,17 +12,8 @@ public interface IUserDao {
      */
 //    查询所有用户
     List<User> findAll();
-//   保存用户
 
-    /**
-     * 保存用户
-     * @param user
-     */
-    void saveUser(User user);
-//更新用户
-    void updateUser(User user);
-//  根据id删除用户
-     void deleteUser(Integer userId);
+
 // 根据id查找用户
     User findById(Integer userId);
 
@@ -34,10 +25,16 @@ public interface IUserDao {
     List<User> findByName(String name);
 
     /**
-     * 查询总用户数
+     * 根据传入参数条件查询
+     * @param user
      * @return
      */
-    int total();
+    List<User> findUserByCondition(User user);
 
-    List<User>  findUserByVo(QueryVo vo);
+    /**
+     * 根据queryvo查询用户信息
+     * @param queryVo
+     * @return
+     */
+    List<User> findUserInids(QueryVo queryVo);
 }

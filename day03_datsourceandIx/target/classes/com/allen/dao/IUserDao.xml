@@ -5,24 +5,7 @@
     <select id="findAll" resultType="com.allen.domain.User">
         select * from user ;
     </select>
-<!--保存用户-->
-    <insert id="saveUser" parameterType="com.allen.domain.User">
---         配置插入操作后返回id，获取插入数据id
-        <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
-            select last_insert_id();
-        </selectKey>
-        insert into user(username,address,sex,brithday)
-        values (#{username},#{address},#{sex},#{brithday});
-    </insert>
-<!--更新用户-->
-    <update id="updateUser" parameterType="com.allen.domain.User">
-        update user set username=#{username},address=#{address},sex=#{sex},brithday=#{brithday}
-        where id =#{id};
-    </update>
-<!--    删除用户-->
-    <delete id="deleteUser" parameterType="java.lang.Integer">
-        delete from user where id=#{userId};
-    </delete>
+
 <!--    根据id查询用户-->
     <select id="findById" parameterType="java.lang.Integer" resultType="com.allen.domain.User">
         select * from user where id=#{userId};
@@ -39,5 +22,27 @@
 <!--    ognl-->
     <select id="findUserByVo" parameterType="com.allen.domain.QueryVo" resultType="com.allen.domain.User">
         select * from user where username like #{user.username};
+    </select>
+<!--    根据条件查询
+    <select id="findUserByCondition" parameterType="com.allen.domain.User"  resultType="com.allen.domain.User">
+        select * from user where 1=1
+        <if test="username != null">
+            and username = #{username}
+        </if>
+        <if test="sex != null">
+            and sex =#{sex}
+        </if>
+    </select>
+-->
+    <select id="findUserByCondition" parameterType="com.allen.domain.User"  resultType="com.allen.domain.User">
+        select * from user
+        <where>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex =#{sex}
+            </if>
+        </where>
     </select>
 </mapper>
