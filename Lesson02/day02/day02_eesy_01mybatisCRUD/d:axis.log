@@ -1,0 +1,101 @@
+2020-05-08 15:04:20,799 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:04:21,086 287    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:04:21,087 288    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:04:21,087 288    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:04:21,087 288    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:04:21,309 510    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:04:22,228 1429   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1259652483.
+2020-05-08 15:04:22,229 1430   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b14c583]
+2020-05-08 15:04:22,232 1433   [           main] DEBUG com.allen.dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2020-05-08 15:04:22,280 1481   [           main] DEBUG com.allen.dao.IUserDao.findAll  - ==> Parameters: 
+2020-05-08 15:04:22,335 1536   [           main] DEBUG com.allen.dao.IUserDao.findAll  - <==      Total: 6
+2020-05-08 15:04:22,340 1541   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b14c583]
+2020-05-08 15:04:22,341 1542   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b14c583]
+2020-05-08 15:04:22,341 1542   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 1259652483 to pool.
+2020-05-08 15:39:52,337 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:39:52,584 247    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:39:52,584 247    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:39:52,585 248    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:39:52,585 248    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:39:52,743 406    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:39:53,477 1140   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:39:53,477 1140   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:39:53,481 1144   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,brithday) values (?,?,?,?); 
+2020-05-08 15:39:53,555 1218   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:39:53,557 1220   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:39:53,566 1229   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:39:53,567 1230   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
+2020-05-08 15:41:22,719 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:41:22,989 270    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:41:22,989 270    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:41:22,990 271    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:41:22,990 271    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:41:23,169 450    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:41:23,887 1168   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:41:23,888 1169   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:41:23,891 1172   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,brithday) values (?,?,?,?); 
+2020-05-08 15:41:24,001 1282   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==> Parameters: 周杰困(String), 北京(String), 男(String), 2020-05-08 15:41:23.159(Timestamp)
+2020-05-08 15:41:24,059 1340   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:41:24,060 1341   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:41:24,062 1343   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:41:24,062 1343   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
+2020-05-08 15:42:45,473 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:42:45,726 253    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:42:45,726 253    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:42:45,727 254    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:42:45,727 254    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:42:45,900 427    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:42:46,648 1175   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:42:46,656 1183   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:42:46,661 1188   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,brithday) values (?,?,?,?); 
+2020-05-08 15:42:46,788 1315   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==> Parameters: 周杰困(String), 北京(String), 男(String), 2020-05-08 15:42:45.884(Timestamp)
+2020-05-08 15:42:46,830 1357   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:42:46,832 1359   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:42:46,833 1360   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:42:46,833 1360   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
+2020-05-08 15:43:16,113 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:43:16,325 212    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:43:16,326 213    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:43:16,327 214    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:43:16,327 214    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:43:16,447 334    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:43:17,133 1020   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:43:17,134 1021   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:43:17,139 1026   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,brithday) values (?,?,?,?); 
+2020-05-08 15:43:17,220 1107   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==> Parameters: 周杰困(String), 北京(String), 男(String), 2020-05-08 15:43:16.438(Timestamp)
+2020-05-08 15:43:17,255 1142   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:43:17,257 1144   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:43:17,257 1144   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:43:17,258 1145   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
+2020-05-08 15:44:56,889 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:44:57,207 318    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:44:57,207 318    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:44:57,207 318    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:44:57,209 320    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:44:57,360 471    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:44:58,047 1158   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:44:58,047 1158   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:44:58,056 1167   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,brithday) values (?,?,?,?); 
+2020-05-08 15:44:58,147 1258   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==> Parameters: 周杰困(String), 北京(String), 男(String), 2020-05-08 15:44:57.348(Timestamp)
+2020-05-08 15:44:58,212 1323   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:44:58,212 1323   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:44:58,213 1324   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:44:58,214 1325   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
+2020-05-08 15:46:27,313 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-08 15:46:27,584 271    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:46:27,585 272    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:46:27,586 273    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:46:27,586 273    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-05-08 15:46:27,791 478    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-05-08 15:46:28,548 1235   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 910091170.
+2020-05-08 15:46:28,549 1236   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:46:28,554 1241   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==>  Preparing: -- 配置插入操作后返回id，获取插入数据id insert into user(username,address,sex,birthday) values (?,?,?,?); 
+2020-05-08 15:46:28,657 1344   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - ==> Parameters: 周杰困(String), 北京(String), 男(String), 2020-05-08 15:46:27.773(Timestamp)
+2020-05-08 15:46:28,663 1350   [           main] DEBUG om.allen.dao.IUserDao.saveUser  - <==    Updates: 1
+2020-05-08 15:46:28,665 1352   [           main] DEBUG ao.IUserDao.saveUser!selectKey  - ==>  Preparing: select last_insert_id(); 
+2020-05-08 15:46:28,665 1352   [           main] DEBUG ao.IUserDao.saveUser!selectKey  - ==> Parameters: 
+2020-05-08 15:46:28,735 1422   [           main] DEBUG ao.IUserDao.saveUser!selectKey  - <==      Total: 1
+2020-05-08 15:46:28,737 1424   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:46:28,781 1468   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:46:28,783 1470   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@363ee3a2]
+2020-05-08 15:46:28,783 1470   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 910091170 to pool.
